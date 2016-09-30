@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Blog or jurnal  </title>
+  
+  <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slider.css" media="all">
+    
+  </head>
+  
+  
+  
+  <body>
+
+     <!-- часы и дата начало -->  
+  <script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("01", "02", "03", "04", "05", "06",
+"07", "08", "09", "10", "11", "12");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "" + day + " " + month[month_num] + " " + d.getFullYear() +
+" year.&nbsp;&nbsp;&nbsp;present time - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+       <!--часы и дата финал скрипта -->
+   
+
+  <script  SRC = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" > </script  > 
+  <script src="js/bootstrap.js"> </script>
+  <script src="slider.js"></script>
+  
+  
+							
+							
+   <div class="navbar navbar-inverse navbar-static-top">
+	       <div class="container">
+		        <div class="navbar-header">
+				    <button type="button"class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+					<span class="sr-only"> Открыть навигацию</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					 <a class="navbar-brand" href="#"> 
+                    <span id="doc_time"> <!--старт активация скрипта-->
+                     Дата и время
+                    </span>
+					
+					<script type="text/javascript">
+                    clock();
+                    </script> <!--финиш активации скрипта -->
+					 </a>
+				           <style>
+                .fonmenu {
+                        background:#ffa500;
+                       }
+				         </style>	   
+				</div>
+				<div class="collapse navbar-collapse" id="responsive-menu">
+				     <ul class="nav navbar-nav">
+					   <li><a href="#">Sample </a></li>
+					   <li class="dropdown">
+					   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog Page <b class="caret"></b> </a>
+					     <ul class="dropdown-menu">
+					   <li class="fonmenu" > <a href="#">Page №1 </a> </li>
+					   <li class="fonmenu"> <a href="#">Page №2 </a> </li>
+					   <li class="fonmenu"> <a href="#">Page №3 </a> </li>
+					   <li class="fonmenu"> <a href="#">Page №4 </a> </li>
+						  </ul>
+					   </li>
+					   <li><a href="#"class="dropdown-toggle" data-toggle="dropdown" >Theme <b class="caret"></b> </a>
+					        <ul class="dropdown-menu" >
+					   <li class="fonmenu"> <a href="#">Theme №1 </a> </li>
+					   <li class="fonmenu"> <a href="#">Theme №2 </a> </li>
+					   <li class="fonmenu"> <a href="#">Theme №3 </a> </li>
+					   <li class="fonmenu"> <a href="#">Theme №4 </a> </li>
+					   <li class="fonmenu"> <a href="#">Theme №5 </a> </li>
+					   <li class="fonmenu"> <a href="#">Theme №6 </a> </li>
+						  </ul>
+					   </li>
+					   <li><a href="#" >Contact </a></li>
+					 </ul>
+					
+				</div>
+		   </div> 
+		  
+		   <div style="height:200px; background-color: #838B83 ;"> 
+		   
+                  <div class="container">
+		       <div class="row">
+			   </br>
+               </br>
+			    
+                    <div class=" .col-xs-6 col-md-4 col-md-push-1 ">
+					<img src="img/levae.jpg"  alt="levae" > free text
+					</div>
+                    <div class=".col-xs-6 col-md-8 col-md-push-2 ">
+					<img src="img/pravae.jpg"  alt="pravae" >
+					</div>
+               </div>
+			       </div>
+		   
+		   </div>
+		   
+	  </div>
+	  
+	              <div class="container">
+				  
+	          <!-- вторая менюха, начало -->
+			  
+			
+				
+ 		         <div class="navbar navbar-default" >
+	     <div class="container">
+		        <div class="navbar-header">
+				    <button type="button"class="navbar-toggle" data-toggle="collapse" data-target="#resp-menu">
+					<span class="sr-only"> Открыть навигацию</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				
+					
+				</div>
+				
+				<div class="collapse navbar-collapse" id="resp-menu" >
+				     <ul class="nav navbar-nav">				 
+					   <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+					   &nbsp &nbsp &nbsp &nbsp World News  <b class="caret"></b> </a>
+                       </li>
+					   <li class="dropdown">
+					   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Celebrity News <b class="caret"></b> </a>
+					     <ul class="dropdown-menu">
+					   <li class="fonmenu"> <a href="#"> topic №1 </a> </li>
+					   <li class="fonmenu"> <a href="#"> topic №2 </a> </li>
+					   <li class="fonmenu"> <a href="#"> topic №3 </a> </li>
+					   <li class="fonmenu"> <a href="#"> topic №4 </a> </li>
+						  </ul>
+					   </li>
+					   <li><a href="#"class="dropdown-toggle" data-toggle="dropdown" >Technology <b class="caret"></b> </a>
+					        <ul class="dropdown-menu" >
+					   <li class="fonmenu"> <a href="#">topic №1 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №2 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №3 </a> </li>
+					    <li class="fonmenu"> <a href="#">topic №4 </a> </li>
+						<li class="fonmenu"> <a href="#">topic №5 </a> </li>
+					    <li class="fonmenu"> <a href="#">topic №6 </a> </li>
+						  </ul>
+					   </li>
+					   <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Lifestyle Tips <b class="caret"></b></a>
+					   <ul class="dropdown-menu" >
+					   <li class="fonmenu"> <a href="#">topic №1 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №2 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №3 </a> </li>
+					    <li class="fonmenu"> <a href="#">topic №4 </a> </li>
+						
+						  </ul>
+					   </li>
+					   <li><a href="#"class="dropdown-toggle" data-toggle="dropdown" >Entertaiment <b class="caret"></b> </a>
+					        <ul class="dropdown-menu" >
+					   <li class="fonmenu"> <a href="#">topic №1 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №2 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №3 </a> </li>
+					    <li class="fonmenu"> <a href="#">topic №4 </a> </li>
+						<li class="fonmenu"> <a href="#">topic №5 </a> </li>
+					    <li class="fonmenu"> <a href="#">topic №6 </a> </li>
+						  </ul>
+					   </li>
+					   <li><a href="#"class="dropdown-toggle" data-toggle="dropdown" >Travel News <b class="caret"></b> </a>
+					        <ul class="dropdown-menu" >
+					   <li class="fonmenu"> <a href="#">topic №1 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №2 </a> </li>
+					   <li class="fonmenu"> <a href="#">topic №3 </a> </li>
+					    <li class="fonmenu"> <a href="#">topic №4 </a> </li>
+						
+						  </ul>
+					   </li>
+					 </ul>
+				</div>
+		   </div> 
+		   
+		          </div>
+		   
+		   
+		   <!-- вторая менюха, конец -->
+	    
+                        <style>
+                .uzor {
+                            position: relative;
+                            top: -25px;
+                       }
+				</style>
+		
+		<div class="uzor"> 
+  <div class="container">
+    <div class="row">
+	  <img src="img/uzory.jpg">
+	</div>
+  </div>
+        <div>
+                <style>
+                .slad {
+                        position: relative;
+                        top: -100px;
+                       }
+				</style>	   
+  
+                   <!-- старт слайдера -->
+ <div class="slad">				   
+    <center>			   
+    <div id="main">
+	  <div class="slider">
+		<div class="slide-list">
+			<div class="slide-wrap">
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl1.jpg" alt="" />	
+				</div>
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl2.jpg" alt="" />
+				</div>
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl3.jpg" alt="" />
+				</div>
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl4.jpg" alt="" />
+				</div>
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl5.jpg" alt="" />
+				</div>
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl6.jpg" alt="" />
+				</div>
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl7.jpg" alt="" />
+				</div>
+				<div class="slide-item">
+					<img width="120" height="75" src="img/sl8.jpg" alt="" />	
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="navy prev-slide"></div>
+		<div class="navy next-slide"></div>
+		<div class="auto play"></div>
+	    </div>
+     </div>
+    </center> 
+      </div>  
+   <!-- финиш слайдера --> 
+   
+   <!-- старт трёхколончатого контента -->
+      <div class="slad">
+        <div class="table-responsive">
+             <table class="table">
+			  <tr style="text-align:center; font-size:21px;">
+                 <td> Technology </td>
+                 <td> Entertaiment  </td>
+                 <td> Advertisement </td>
+              </tr>
+              <tr>
+                 <td> <a href="#"> <img  src="img/texno.jpg" alt="texno.jpg" /> </a> </td>
+                 <td> <a href="#"> <img  src="img/entertaiment.jpg" alt="entertaiment.jpg" /> </a> </td>
+                 <td> <a href="#"> <img  src="img/adver.jpg" alt="adver.jpg" /> </a> </td>
+              </tr>
+			  <tr>
+                 <td> <a href="#">
+                      From the section Technology </br>
+                      Full article Electric car sets acceleration record </a>
+                      </br>
+					  </br>
+					  <a href="#">
+                      Full article Hasselblad camera breaks new ground	</a>	</td>
+                 <td> <a href="#">
+                       Abbey and M5 services make Riba list </br>
+                       Full article Abbey and M5 services make Riba list </a>
+					   </br>
+					   </br>
+					   <a href="#"> 
+					    Darth Vader set for Star Wars comeback  </a>
+				 </td>
+                 
+              </tr>
+			  <tr>
+			      <td> <a href="#"> <img  src="img/novosti11.jpg" alt="novosti11.jpg" /> 
+                          Google's CEO sums up his AI vision </br>
+                         Sundar Pichai is on a "journey"</br> from mobile to AI.
+						 Good thing he has an assistant.</a>    </td>
+				  <td> <a href="#"> <img  src="img/novosti1.jpg" alt="novosti1.jpg" /> 
+                          The new face of 'Star Wars' John Boyega </br>
+						  discusses his lead role in the upcoming film. </a>  </td> 
+					<td style="font-size:21px; text-align:center;">  Sponsors </td>	  
+			  </tr>
+			  <tr>
+			       <td> <a href="#"> <img  src="img/novosti111.jpg" alt="novosti111.jpg"/>
+      				     New 'tech support' scams target victims </br>
+						 by impersonating telcos - how to protect yourself </a> </td>
+			       <td> <a href="#"> <img  src="img/novosti2.jpg"  alt="novosti2.jpg"/> 
+       				    RAPPER 50 Cent was arrested over the </br>
+						weekend after he yelled
+						“moth***er” on stage during a show</a> </td>
+			       <td> <a href="#"> <img  src="img/spon1.jpg"/> </a> 
+				        <a href="#"> <img  src="img/spon2.jpg"/> </a></td>
+			  </tr>
+			   <tr style="text-align:center; font-size:21px;">
+                 <td> Science News </td>
+                 <td> Travel News  </td>
+                 <td> Video </td>
+              </tr>
+			  <tr>
+                 <td> <a href="#"> <img  src="img/sains.jpg"/> </a> </td>
+                 <td> <a href="#"> <img  src="img/putnik.jpg"/> </a> </td>
+                 <td> <iframe width="300" height="200" src="https://www.youtube.com/embed/ils1sQY3SR8" frameborder="0" allowfullscreen></iframe> 
+				 </td>
+              </tr>
+			   <tr>
+                 <td> <a href="#">
+                      From the section Technology </br>
+                      Full article Electric car sets acceleration record </a>
+                      </br>
+					  </br>
+					  <a href="#">
+                      Full article Hasselblad camera breaks new ground	</a>	</td>
+                 <td> <a href="#">
+                       Abbey and M5 services make Riba list </br>
+                       Full article Abbey and M5 services make Riba list </a>
+					   </br>
+					   </br>
+					   <a href="#"> 
+					    Darth Vader set for Star Wars comeback  </a>
+				 </td>
+				 <td style="text-align:center; font-size:21px;"> Twitter </td>
+                 
+              </tr>
+			   <tr>
+                 <td> <a href="#">
+                      From the section Technology </br>
+                      Full article Electric car sets acceleration record </a>
+                      </br>
+					  </br>
+					  <a href="#">
+                      Full article Hasselblad camera breaks new ground	</a>	</td>
+                 <td> <a href="#">
+                       Abbey and M5 services make Riba list </br>
+                       Full article Abbey and M5 services make Riba list </a>
+					   </br>
+					   </br>
+					   <a href="#"> 
+					    Darth Vader set for Star Wars comeback  </a>
+				 </td>
+                 <td> A SOUTH Australian woman has joked her 
+				 that </br> her breast implants served as ‘airbags’ </br> after she was jumped by a 
+				 </br>kangaroo in the state’s wine region.  </td>
+              </tr>
+			  <tr>
+                 <td> <a href="#">
+                      From the section Technology </br>
+                      Full article Electric car sets acceleration record </a>
+                      </br>
+					  </br>
+					  <a href="#">
+                      Full article Hasselblad camera breaks new ground	</a>	</td>
+                 <td> <a href="#">
+                       Abbey and M5 services make Riba list </br>
+                       Full article Abbey and M5 services make Riba list </a>
+					   </br>
+					   </br>
+					   <a href="#"> 
+					    Darth Vader set for Star Wars comeback  </a>
+				 </td>
+                 <td> A SOUTH Australian woman has joked her 
+				 that </br> her breast implants served as ‘airbags’ </br> after she was jumped by a 
+				 </br>kangaroo in the state’s wine region.  </td> 
+              </tr>
+             </table>
+        </div>
+	   </div>	
+   <!-- финиш трёхколончатого контента -->
+   
+       
+        </div>
+		</div>
+       </div>
+   
+       <footer style="height:200px; background-color: #838B83 ;">
+	       <div class="table-responsive"> 
+             <table class="table">
+			    <tr style="text-align:center; font-size:21px;">
+			         <td>Recent Posts </td>
+					 <td>About Viewport </td>
+					 <td>Comments </td>
+			    </tr>
+				<tr style="text-align:center;">
+				      <td> <a href="#"> <span style="color:white;">Use prose to put the focus on words </span></a>
+  					       </br>
+						   </br>
+        				   <a href="#"> <span style="color:white;">Images add life to your site</span> </a>
+						   </br>
+						   </br>
+						   <a href="#"> <span style="color:white;">7 Tips for short attention spans</span> </a> </td>
+					  <td> Domec sed odlo dul. Nulla vitae elit libero, a pharetra augue. </br>
+					       Nulan id dolor id nibh ultricies vehicula ut id elit.
+						  </br>
+						  </br>
+						   Duis molis, est non commodo luctus, nisi erat portitor ligula,
+						   </br> eget	lacinia odio sem nec edit.</td>
+					  <td>Omman Clark on 
+					  </br> <a href="#"> <span style="color:white;">Sample Post with Threaded comments</span> </a> </td>
+				</tr>
+			 </table>
+           </div>
+	   </footer>
+	                             
+  
+   </body>
+   </html>
